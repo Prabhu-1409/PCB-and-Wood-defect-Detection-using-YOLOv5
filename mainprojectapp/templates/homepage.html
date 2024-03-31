@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLO App</title>
+</head>
+<body>
+    <form method="POST" enctype="multipart/form-data">
+        <h5>pcbandwood</h5>
+        <input type="file" name="pcbandwood"></input>
+        <label>Confidence</label><input type="range" min="0" max="1" step="0.01" name="pcbandwoodconfidence" value="0.25"></input> 
+        <label>Threshold</label><input type="range" min="0" max="1" step="0.01" name="pcbandwoodthreshold" value="0.25"></input> 
+        <h5>pcbcomponent</h5>
+        <input type="file" name="pcbcomponent"></input>
+        <label>Confidence</label><input type="range" min="0" max="1" step="0.01" name="pcbcomponentconfidence" value="0.25"></input> 
+        <label>Threshold</label><input type="range" min="0" max="1" step="0.01" name="pcbcomponentthreshold" value="0.25"></input>
+        <h5>pcbfrontdefect</h5>
+        <input type="file" name="pcbfrontdefect"></input>
+        <label>Confidence</label><input type="range" min="0" max="1" step="0.01" name="pcbfrontconfidence" value="0.25"></input> 
+        <label>Threshold</label><input type="range" min="0" max="1" step="0.01" name="pcbfrontthreshold" value="0.25"></input>
+        <input type="submit"></input>
+    </form>
+    {% if validate==True %}
+    <img src="/static/image0.jpg"></img>
+    <h6>{{front}}</h6>
+    {% endif %}
+</body>
+</html>
