@@ -1,0 +1,19 @@
+names:
+- missing_hole
+- mouse_bite
+- open_circuit
+- short
+- spur
+- spurious_copper
+- Crack
+- Dead Knot
+- Knot Missing
+- Knot With Crack
+- Live Knot
+- Marrow
+- Quartzity
+- Resin
+nc: 14
+path: /content/pcbandwood/pcbandwood/
+train: /content/pcbandwood/pcbandwood/train/
+val: /content/pcbandwood/pcbandwood/valid/
